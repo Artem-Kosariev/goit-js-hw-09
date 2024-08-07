@@ -23,7 +23,7 @@ form.addEventListener('submit', event => {
 
 const saveData = localStorage.getItem('feedback-form-state');
 if (saveData) {
-  const parsedData = JSON.parse(savedData);
+  const parsedData = JSON.parse(saveData);
   form.email.value = parsedData.email || '';
   form.message.value = parsedData.message || '';
   formData.email = parsedData.email || '';
